@@ -1,9 +1,9 @@
-# For TeleBot
+# For XandarBot
 # Copyright (C) 2019 The Raphielscape Company LLC.
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 # credits to @AvinashReddy3108
-# Rewritten for TeleBot by @xditya
+# Rewritten for XandarBot by @xandar0202
 
 """
 This module is used for updating TeleBot
@@ -25,7 +25,7 @@ requirements_path = path.join(
 HEROKU_API_KEY = Var.HEROKU_API_KEY
 HEROKU_APP_NAME = Var.HEROKU_APP_NAME
 GIT_REPO_NAME = "TeleBot"
-UPSTREAM_REPO_URL = "https://github.com/xditya/TeleBot"
+UPSTREAM_REPO_URL = "https://github.com/lucifeermorningstar/XandarUserBot"
 
 xxxx = CMD_HNDLR if CMD_HNDLR else "."
 
@@ -94,7 +94,7 @@ async def upstream(ups):
             f"**[UPDATER]:**` Looks like you are using your own custom branch ({ac_br}). "
             "in that case, Updater is unable to identify "
             "which branch is to be merged. "
-            "Please checkout the official branch of TeleBot`"
+            "Please checkout the official branch of XandarBot`"
         )
         repo.__del__()
         return
@@ -193,7 +193,7 @@ async def upstream(ups):
             repo.git.reset("--hard", "FETCH_HEAD")
         await updateme_requirements()
         await ups.edit(
-            "`Successfully Updated!\n" "Bot is restarting... Wait for a second!`"
+            "`Successfully Updated!\n" "XandarBot is restarting... Wait for a second!`"
         )
         # Spin a new instance of bot
         args = [sys.executable, "-m", "userbot"]
