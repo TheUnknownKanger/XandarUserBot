@@ -1,6 +1,6 @@
-# Ported from other Telegram UserBots for TeleBot//Made for TeleBot
+# Ported from other Telegram UserBots for XandarBot
 # Kangers, don't remove this line
-# @its_xditya
+# @xandar0202
 
 """COMMAND : .pbio, .ppic, .pname, .delpfp {n}"""
 
@@ -75,7 +75,7 @@ async def _(event):
             except Exception as e:  # pylint:disable=C0103,W0703
                 await event.edit(str(e))
             else:
-                await event.edit("My profile picture was succesfully changed")
+                await event.edit("My profile picture was succesfully changed by XandarBot")
     try:
         os.remove(photo)
     except Exception as e:  # pylint:disable=C0103,W0703
