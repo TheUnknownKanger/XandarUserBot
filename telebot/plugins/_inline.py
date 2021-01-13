@@ -1,5 +1,5 @@
-#    TeleBot - UserBot
-#    Copyright (C) 2020 TeleBot
+#    XandarBot - UserBot
+#    Copyright (C) 2020 XandarBot
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -31,7 +31,7 @@ PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
 TELEPIC = (
     PMPERMIT_PIC
     if PMPERMIT_PIC
-    else "https://telegra.ph/file/8999b33566988eb0e1516.jpg"
+    else "https://telegra.ph/file/388bbb7d9ac74fdcb080f.jpg"
 )
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
@@ -120,13 +120,13 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.query.user_id == bot.uid and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"TeleBot - Telegram Userbot.",
+                text=f"XandarBot - Telegram Userbot.",
                 buttons=[
                     [
                         Button.url("Repo", "https://github.com/xditya/TeleBot"),
                         Button.url(
                             "Deploy",
-                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot&template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot",
+                            "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Flucifeermorningstar%2FXandarUserBot&template=https%3A%2F%2Fgithub.com%2Flucifeermorningstar%2FXandarBot",
                         ),
                     ],
                     [Button.url("Support", "https://t.me/xandar0202")],
@@ -144,12 +144,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
                         ),
                         custom.Button.url(
                             "Deploy 🌀",
-                            "https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fxditya%2FTeleBot",
+                            "https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Flucifeermorningstar%2FXandarUserBot",
                         ),
                     ],
                     [
                         custom.Button.url(
-                            "Updates and Support Group↗️", "https://t.me/TeleBotSupport"
+                            "Updates and Support Group↗️", "https://t.me/DevilBot_Official"
                         )
                     ],
                 ],
@@ -181,7 +181,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
         else:
             await event.edit(
-                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards.\n\nProtected by [TeleBot](t.me/TeleBotSupport)"
+                f"This is the PM Security for {DEFAULTUSER} to keep away spammers and retards.\n\nProtected by [XandarBot](t.me/deviluserbot)"
             )
 
     @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"reopen")))
@@ -326,7 +326,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             else:
                 reply_pop_up_alert = help_string
             reply_pop_up_alert += "\n Use .unload {} to remove this plugin\n\
-                © Telebot".format(
+                © XandarBot".format(
                 plugin_name
             )
             if len(help_string) >= 140:
