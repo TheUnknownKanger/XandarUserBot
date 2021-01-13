@@ -1,6 +1,6 @@
-# Ported from other Telegram UserBots for TeleBot//Made for TeleBot
+# Ported from other Telegram UserBots for XandarBot
 # Kangers, don't remove this line
-# @its_xditya
+# @xandar0202
 
 """Count the Number of Dialogs you have in your Telegram Account
 Syntax: .count"""
