@@ -52,9 +52,9 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
 
-print("TeleBot has been deployed! ")
+print("XandarBot has been deployed! ")
 
-print("Setting up TGBot")
+print("Setting up XandarBot")
 path = "telebot/plugins/mybot/*.py"
 files = glob.glob(path)
 for name in files:
@@ -73,8 +73,8 @@ if LOAD_MYBOT == "True":
             load_pmbot(shortname.replace(".py", ""))
     print("TGBot set up completely!")
 
-print("TGBot set up - Level - Basic")
-print("TeleBot has been fully deployed! Do Visit @TeleBotSupport")
+print("XandarBot set up - Level - Basic")
+print("XandarBot has been fully deployed! Do Visit @xandar0202")
 bot.loop.run_until_complete(startup_log_all_done())
 
 if len(argv) not in (1, 3, 4):
