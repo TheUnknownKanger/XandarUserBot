@@ -6,7 +6,7 @@
 # Rewritten for XandarBot by @xandar0202
 
 """
-This module is used for updating TeleBot
+This module is used for updating XandarBot
 """
 
 import asyncio
