@@ -1,17 +1,17 @@
 {
- "name": "TeleBot - UserBot",
- "description": "An advanced Telethon Userbot, from @TeleBotSupport",
- "logo": "https://telegra.ph/file/0b1d5cb8deeec7a506154.jpg",
+ "name": "XandarBot - UserBot",
+ "description": "An advanced Telethon Userbot, from @xandar0202  Powdered By Devil UserBot",
+ "logo": "https://telegra.ph/file/30424ea49fadec952043d.jpg",
  "keywords": [
   "telegram",
   "userbot",
-  "TeleBot",
+  "XandarBot",
   "modular",
   "productivity"
  ],
- "repository": "https://github.com/xditya/TeleBot/",
+ "repository": "https://github.com/lucifeermorningstar/XandarUserBot/",
  "website": "https://xditya.gitbook.io/telebot/",
- "success_url": "https://t.me/TeleBotHelp/13",
+ "success_url": "https://t.me/xandar0202",
  "stack": "container",
  "env": {
   "ENV": {
@@ -32,7 +32,7 @@
    "value": ""
   },
   "STRING_SESSION": {
-   "description": "Get this value by running python3 telesetup.py locally or https://telebot-sessionstring-generator.xditya.repl.run online.",
+   "description": "Get this value by https://repl.it/@lucifeermorning/DevilBot#main.py .",
    "value": ""
   },  
   "CUSTOM_PMPERMIT": {
@@ -55,7 +55,7 @@
    "required": false
   },  
   "GIT_REPO_NAME": {
-   "description": "Your repo name Example: xditya/TeleBot, but GITHUB_ACCESS_TOKEN must be setup first.",
+   "description": "Your repo name Example: lucifeermorningstar/XandarUserBot, but GITHUB_ACCESS_TOKEN must be setup first.",
    "value": "",
    "required": false
   },
