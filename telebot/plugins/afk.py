@@ -1,5 +1,5 @@
-#    TeleBot - UserBot
-#    Copyright (C) 2020 TeleBot
+#    XandarBot - UserBot
+#    Copyright (C) 2020 XandarBot
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
@@ -15,9 +15,9 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 # Based of AFK by @SpEcHIDe
-# Media Afk, Time, by @xditya
+# Media Afk, Time, by @xandar0202
 """
-AFK Plugin for TeleBot
+AFK Plugin for XandarBot
 Syntax: .afk REASON
 """
 import asyncio
