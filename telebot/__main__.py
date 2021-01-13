@@ -21,7 +21,7 @@ async def add_bot(bot_token):
 
 async def startup_log_all_done():
     try:
-        await bot.send_message(TELE, f"**TeleBot has been deployed.\nSend** `{CMD_HNDLR}alive` **to see if the bot is working.\n\nAdd** @{BOTNAME} **to this group and make it admin for enabling all the features of TeleBot**")
+        await bot.send_message(TELE, f"**XandarBot has been deployed.\nSend** `{CMD_HNDLR}alive` **to see if the bot is working.\n\nAdd** @{BOTNAME} **to this group and make it admin for enabling all the features of XandarBot**")
     except BaseException:
         print("Either PRIVATE_GROUP_ID is wrong or you have left the group.")
 
@@ -71,7 +71,7 @@ if LOAD_MYBOT == "True":
             path1 = Path(f.name)
             shortname = path1.stem
             load_pmbot(shortname.replace(".py", ""))
-    print("TGBot set up completely!")
+    print("XandarBot set up completely!")
 
 print("XandarBot set up - Level - Basic")
 print("XandarBot has been fully deployed! Do Visit @xandar0202")
