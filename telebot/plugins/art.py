@@ -1,5 +1,5 @@
-# For TeleBot
-# By @AKASH_AM1 and @xditya
+# For XandarBot
+# By @deviluserbot
 # Kangers keep cr eors
 from telebot import ALIVE_NAME
 from telebot.utils import admin_cmd
@@ -86,6 +86,12 @@ H = (
     "╬═╬/▌ \n"
     "╬═╬/ \\n"
 )
+N = (" ____               _ "
+     "|  _ \  _____   _(_) |"
+     "| | | |/ _ \ \ / / | |"
+     "| |_| |  __/\ V /| | |"
+     "|____/ \___| \_/ |_|_|"
+) 
 
 
 @telebot.on(admin_cmd(pattern=r"monster"))
@@ -122,3 +128,8 @@ async def bluedevidog(dog):
 @telebot.on(sudo_cmd(pattern=r"hmf"))
 async def bluedevihmf(hmf):
     await eor(hmf, H)
+
+@telebot.on(admin_cmd(pattern=r"d"))
+@telebot.on(sudo_cmd(pattern=r"d"))
+async def bluedevihmf(hmf):
+    await eor(d, N)
