@@ -1,5 +1,5 @@
-# Originally made by @rekcah for @javes05
-# porting to hellbot by @kraken_the_badass...
+# Originally made by @deviluserbot
+# porting to devilbot by devil
 # i asked rekcah before porting...not like other kangers....
 # keep credit if u wanna kang...
 # else u are a gay...no doubt in that....
@@ -137,4 +137,8 @@ async def _(event):
                     await event.reply(str(e))
             await edit_or_reply(event, "Added user to the chat....")
 
+
+        CMD_HELP.update(
+    {"InviteAll": "➟ `.inviteall (user name of group) `\nit used to scrap members."}
+)
 
