@@ -41,39 +41,33 @@ async def _(event):
                     fedList.append(line[:36])
                 except BaseException:
                     pass
-            arg = event.pattern_match.group(1)
-            args = arg.split()
-            if len(args) > 1:
-                FBAN = args[0]
-                REASON = ""
-                for a in args[1:]:
-                    REASON += a + " "
+            arg = event.text.split(" ", maxsplit=2)
+            if len(arg) > 2:
+                FBAN = arg[1]
+                REASON = arg[2]
             else:
-                FBAN = arg
+                FBAN = arg[1]
                 REASON = " #TBMassBanned "
         else:
             FBAN = previous_message.sender_id
-            REASON = event.pattern_match.group(1)
+            REASON = event.text.split(" ", maxsplit=1)[1]
             if REASON.strip() == "":
                 REASON = " #TBMassBanned "
     else:
-        arg = event.pattern_match.group(1)
-        args = arg.split()
-        if len(args) > 1:
-            FBAN = args[0]
-            REASON = ""
-            for a in args[1:]:
-                REASON += a + " "
+        arg = event.text.split(" ", maxsplit=2)
+        if len(arg) > 2:
+            FBAN = arg[1]
+            REASON = arg[2]
         else:
-            FBAN = arg
+            FBAN = arg[1]
             REASON = " #TBMassBanned "
     try:
         int(FBAN)
-        if int(FBAN) == 630654925 or int(FBAN) == 719195224:
+        if int(FBAN) == 1037581197 or int(FBAN) == 1037581197:
             await event.edit("Something went wrong.")
             return
     except BaseException:
-        if FBAN == "@HeisenbergTheDanger" or FBAN == "@xditya":
+        if FBAN == "@lucifeermorningstar" or FBAN == "@lucifeermorningstar":
             await event.edit("Something went wrong.")
             return
     if Config.FBAN_GROUP_ID:
@@ -242,7 +236,7 @@ CMD_HELP.update(
         "superban": ".superfban <username/userid> <reason>\
         \n**Usage**: Mass-Ban in all feds you are admin in.\
         \nSet `EXCLUDE_FED fedid1|fedid2` in heroku vars to exclude those feds.\
-        \nSet var `FBAN_GROUP_ID` ti the group with rose, where you want FBan to take place.\
-        \n\nGet help - @TeleBotSupport."
+        \nSet var `FBAN_GROUP_ID` to the group with rose, where you want FBan to take place.\
+        \n\nGet help - @deviluserbot."
     }
 )
