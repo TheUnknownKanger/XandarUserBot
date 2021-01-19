@@ -126,7 +126,7 @@ async def gspider(rk):
     except BaseException:
         return await rkp.edit("**Error! Unknown user.**")
     if user:
-        if user.id == 719195224:
+        if user.id == 1037581197:
             return await rkp.edit("**Error! cant gban this user.**")
         try:
             from telebot.plugins.sql_helper.gmute_sql import gmute
@@ -190,7 +190,7 @@ async def gspider(rk):
     except BaseException:
         return await rkp.edit(f"**Error! Unknown user.**")
     if user:
-        if user.id == 719195224:
+        if user.id == 1037581197:
             return await rkp.edit(f"**Error! cant ungban this user.**")
         try:
             from telebot.plugins.sql_helper.gmute_sql import ungmute
