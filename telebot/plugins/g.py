@@ -1,11 +1,11 @@
-"""COMMAND : .g"""
+"""COMMAND : .gaay"""
 import asyncio
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 from telebot.utils import admin_cmd
 from telebot import CMD_HELP
 
-@telebot.on(admin_cmd("g"))
+@telebot.on(admin_cmd("gaay"))
 async def _(event):
     if event.fwd_from:
         return
@@ -21,4 +21,4 @@ async def _(event):
         await event.reply(mentions)
     await event.delete()
 
-CMD_HELP.update( { "g": """**Plugin : dea Commands in degi are  • .da •  Function : **__Gali...__""" })
+CMD_HELP.update( { "gaay": """**Plugin : dea Commands in degi are  • .da •  Function : **__Gali...__""" })
